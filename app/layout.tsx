@@ -5,12 +5,6 @@ import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
-<head>
-<meta name="google-site-verification" content="VZZpgzpJmjznTn-Ts_H7dVyKYthkNT55QR3McbZcKLg" />
-</head>
-
-
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -35,6 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={`${inter.variable} ${playfair.variable} antialiased`}>
+      <head>
+        <meta name="google-site-verification" content="VZZpgzpJmjznTn-Ts_H7dVyKYthkNT55QR3McbZcKLg" />
+      </head>
       <body className="font-sans">
         <Navigation />
         <main>{children}</main>
